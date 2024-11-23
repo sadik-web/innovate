@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+
+.container {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+
+/* Header & hero combined section start */
+
+#header-hero {
+
+    background: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay {
+    background: #6a62c5cb;
+    padding: 0 0 20px 0;
+}
+
+.header {
+    width: 100%;
+    background: #160c6d98;
+    padding: 15px 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "open sans", sans-serif;
+}
+
+
+.logo {}
+
+.menus ul li {
+    display: inline-block;
+    padding: 0 30px;
+}
+
+
+.menus ul li a {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.4s ease;
+}
+
+.menus ul li a:hover {
+    color: #1BBF00;
+}
+
+.menus ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    left: 0;
+    transition: width 0.4s ease;
+    background: #1BBF00;
+}
+
+.menus ul li a:hover::after {
+    width: 100%;
+}
+
+.con-btn a {
+    padding: 20px 30px;
+    color: #FFFFFF;
+    background: #1BBF00;
+    border-radius: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 200%;
+    transition: .4s;
+}
+
+.con-btn a:hover {
+    color: #1BBF00;
+    background: #FFFFFF;
+    font-weight: 700;
+}
+
+
+
+.hero-content {
+    padding: 120px 0 0 0;
+}
+
+.hero-content picture img {
+    padding-left: 20px;
+    width: 120px;
+}
+
+.hero-text {
+    padding: 0 150px 120px;
+}
+
+.hero-text h1 {
+    display: inline-block;
+    text-align: center;
+    font-size: 84px;
+    font-family: "open sans", sans-serif;
+    font-weight: 700;
+    line-height: 100px;
+    text-transform: lowercase;
+    color: #FFFFFF;
+}
+
+.hero-btn {
+    padding-bottom: 100px;
+    text-align: center;
+    font-family: "open sans", sans-serif;
+}
+
+.hero-btn a {
+    margin: 0 20px;
+    padding: 15px 30px;
+    background: #1BBF00;
+    border-radius: 100px;
+    text-transform: capitalize;
+    font-style: 20px;
+    font-weight: 600;
+    color: #FFFFFF;
+    transition: .4s;
+}
+
+.hero-btn a:hover {
+    color: #1BBF00;
+    background: #FFFF;
+    font-weight: 700;
+}
+
+#full-bg {
+    border: 2px solid #1BBF00;
+    background: transparent;
+}
+
+.hero-btn #full-bg:hover {
+    color: #FFFFFF;
+    background: #1BBF00;
+    font-weight: 700;
+}
+
+.doted-img {
+    padding: 10px 10px 120px 10px;
+    width: 200px;
+    margin-left: auto;
+}
+
+
+/* Header & hero combined section end */
+
+/* Info section start */
+
+#info {
+    background: #F9F9FB;
+
+}
+
+.info-element {
+    position: relative;
+}
+
+.info-element picture img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+.info-flex {
+    display: flex;
+    padding: 200px 30px;
+    justify-content: center;
+}
+
+.info-content {
+    text-align: center;
+    padding: 25px 30px;
+    border-right: 2px solid #4f585f2f;
+    font-family: "open sans", sans-serif;
+    text-transform: capitalize;
+}
+
+.info-content h3 {
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 800;
+    color: #1BBF00;
+    padding-bottom: 15px;
+}
+
+.info-content h4 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.info-content-ch {
+    text-align: center;
+    padding: 25px 30px;
+    ;
+    font-family: "open sans", sans-serif;
+    text-transform: capitalize;
+}
+
+.info-content-ch h3 {
+    font-size: 64px;
+    line-height: 68px;
+    font-weight: 800;
+    color: #1BBF00;
+    padding-bottom: 15px;
+}
+
+.info-content-ch h4 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+/* Info section end */
+
+
+/* Why choose us section start */
+
+#choose {
+    padding: 120px 0 90px 0;
+    position: relative;
+    background: #FDFDFD;
+}
+
+.choose-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.choose-flex {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.choose-left {
+    width: 48%;
+}
+
+.choose-left-content {
+    padding: 20px 170px 0 120px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    border-radius: 12px;
+    transition: .4s;
+}
+
+
+.choose-left-content:hover {
+    -webkit-box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 22px -6px rgba(0,0,0,0.75);
+    background-color: #FFFFFF;
+    padding-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+.choose-left-content .circle-green {
+    height: 20px;
+    width: 20px;
+    background: #1BBF00;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 60px;
+}
+
+.choose-left-content .circle-red {
+    height: 20px;
+    width: 20px;
+    background: #CBC8F0;
+    border-radius: 50%;
+    position: absolute;
+    top: 25px;
+    left: 70px;
+}
+
+.choose-left-content h3 {
+    font-family: "paprika", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #726E9E;
+}
+
+.choose-right {
+    width: 49%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.choose-right h3{
+    font-family: "open sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #141135;
+}
+.choose-right p{
+    font-family: "paprika", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #726E9E;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.choose-right a{
+    font-family: "open sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 15px 30px;
+    background: #1BBF00;
+    border-radius: 100px;
+    transition: .4s;
+}
+
+
+.choose-right a:hover{
+    background: #726E9E;
+}
+
+
+
+
+/* Why choose us section end */
